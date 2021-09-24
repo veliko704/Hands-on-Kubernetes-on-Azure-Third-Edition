@@ -46,7 +46,7 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
       - name: Kubernetes set context
-        uses: Azure/k8s-set-context@v1
+        uses: Azure/aks-set-context@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           resource-group: rgr-rgr
